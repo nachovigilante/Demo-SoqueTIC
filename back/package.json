@@ -1,0 +1,16 @@
+{
+    "name": "demo-back",
+    "version": "1.0.0",
+    "description": "",
+    "main": "handler.js",
+    "type": "module",
+    "scripts": {
+        "start": "node handler.js",
+        "dev": "npx nodemon handler.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "soquetic": "^1.0.0"
+    }
+}
