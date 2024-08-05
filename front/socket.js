@@ -6,7 +6,7 @@ const send = (type, data, callback = () => {}) => {
 
 const receive = (type, callback) => {
   socket.on("realTimeEvent", (receivedType, data) => {
-    if (receivedType === type) callback(data);
+    if (receivedType === type) return callback(data);
   });
 };
 
