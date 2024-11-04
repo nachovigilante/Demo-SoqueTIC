@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "soquetic": "^1.2.0"
+    "soquetic": "^1.2.3"
   }
 }
