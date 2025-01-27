@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-fetchData("date", (data) => {
+getData("date", (data) => {
   date.innerText = data;
 });
 
