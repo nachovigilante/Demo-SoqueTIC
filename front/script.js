@@ -9,18 +9,18 @@ connect2Server();
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (input.value) {
-    postData("message", { msg: input.value }, (data) => {
+    postEvent("message", { msg: input.value }, (data) => {
       a.innerHTML = data.msg;
     });
     input.value = "";
   }
 });
 
-getData("date", (data) => {
+getEvent("date", (data) => {
   date.innerText = data;
 });
 
-receive("second", () => {
+subscribeRealTimeEvent("second", () => {
   seconds.innerText = parseInt(seconds.innerText) + 1;
 });
 
